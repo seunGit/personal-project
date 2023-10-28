@@ -1,0 +1,66 @@
+/* css 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    height: 100vh;
+}
+
+/* 입력 내용 */
+input {
+    outline: none;
+    color : white;
+    font-size: 20px;
+}
+
+.calculator {
+    width: 230px;
+    border-radius: 10px;
+    background-color: #444;
+    padding: 5px;
+}
+
+.calculator form {
+    display: grid;
+    grid-template-columns: repeat(4, 55px);
+    grid-auto-rows: 55px;
+    grid-gap: 0;
+}
+
+.calculator form .line1 {
+    background-color: #555;
+}
+
+.calculator form .operator {
+    background-color: #FFAA00;
+}
+
+.calculator form .number {
+    background-color: #777;
+}
+
+.calculator form .zero {
+    background-color: #777;
+}
+
+.calculator form .dot {
+    background-color: #777;
+}
+
+.calculator form input[type="text"] {
+    grid-column: span 4;
+    background-color: #666;
+    text-align: right;
+    padding: 0 10px;
+}
+
+.calculator form .zero {
+    grid-column: span 2;
+}
